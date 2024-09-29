@@ -1,0 +1,27 @@
+﻿<Window x:Class="PizzaHot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaHot"
+        mc:Ignorable="d"
+        Icon="Images/cheese.png" WindowState="Maximized"
+        Title="Főmenü" Height="450" Width="800">
+    <Grid  Width="500" Height="120">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label VerticalContentAlignment="Top" FontSize="30" Grid.Row="0" Grid.ColumnSpan="3" HorizontalContentAlignment="Center">Válasszon tevékenységet</Label>
+        
+        <Button Grid.Row="1" Grid.Column="0" x:Name="btnBelepes" Click="btnBelepes_Click">Bejelentkezés</Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="btnRegisztracio" Click="btnRegisztracio_Click">Regisztráció</Button>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="btnRendeles" Click="btnRendeles_Click">Rendelés</Button>
+    </Grid>
+</Window>
